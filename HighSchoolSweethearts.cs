@@ -1,10 +1,13 @@
-using System;
+﻿using System;
 
 public static class HighSchoolSweethearts
 {
     public static string DisplaySingleLine(string studentA, string studentB)
     {
-        throw new NotImplementedException($"Please implement the (static) HighSchoolSweethearts.DisplaySingleLine() method");
+        string sweethearts = studentA + " ♡ " + studentB;
+        sweethearts = sweethearts.PadLeft(32 + studentB.Length);
+        sweethearts = sweethearts.PadRight(61);
+        return sweethearts;
     }
 
     public static string DisplayBanner(string studentA, string studentB)
