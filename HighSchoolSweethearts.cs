@@ -12,7 +12,21 @@ public static class HighSchoolSweethearts
 
     public static string DisplayBanner(string studentA, string studentB)
     {
-        throw new NotImplementedException($"Please implement the (static) HighSchoolSweethearts.DisplayBanner() method");
+        return string.Format(@"
+     ******       ******
+   **      **   **      **
+ **         ** **         **
+**            *            **
+**                         **
+**     {0} +  {1}    **
+ **                       **
+   **                   **
+     **               **
+       **           **
+         **       **
+           **   **
+             ***
+              *", studentA, studentB);
     }
 
     public static string DisplayGermanExchangeStudents(string studentA
