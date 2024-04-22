@@ -32,6 +32,7 @@ public static class HighSchoolSweethearts
     public static string DisplayGermanExchangeStudents(string studentA
         , string studentB, DateTime start, float hours)
     {
-        throw new NotImplementedException($"Please implement the (static) HighSchoolSweethearts.DisplayGermanExchangeStudents() method");
+        System.Globalization.CultureInfo.CurrentCulture = new System.Globalization.CultureInfo("de-DE");
+        return $"{studentA} and {studentB} have been dating since {start:d} - that's {hours:N2} hours";
     }
 }
